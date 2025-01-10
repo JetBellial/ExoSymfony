@@ -13,13 +13,6 @@ class AppFixtures extends Fixture
         // $product = new Product();
         // $manager->persist($product);
 
-        $user1 = new Utilisateur();
-        $user1
-            ->setEmail("test@test.fr")
-            ->setFirstname("Thomas")
-            ->setLastname("Bebou")
-            ->setPassword("12345");
-
         $manager->flush();
     }
 }
