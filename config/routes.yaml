@@ -3,3 +3,15 @@ controllers:
         path: ../src/Controller/
         namespace: App\Controller
     type: attribute
+
+AccueilControllerAffichage:
+    path: /accueil/{nom}
+    controller: App\Controller\AccueilController::affichage
+
+AccueilControllerCalculatrice:
+    path: /calculatrice/{n1}/{n2}/{op}
+    controller: App\Controller\AccueilController::calculatrice
+
+TestControllerNom:
+    path: /test/{nom}
+    controller: App\Controller\TestController::index
